@@ -39,13 +39,11 @@
   background-color: #555;
 }
 
-/* Active class for the nav link */
 .nav-item .active {
   background-color: #007bff;
   color: white;
 }
 
-/* Styling for the main content area */
 main {
   width: 100%;
   max-width: 900px;

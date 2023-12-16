@@ -17,7 +17,6 @@ export const UseStateRoute: React.FC<Props> = ({ examples }) => {
                     (example) => <button
                         key={example.value}
                         onClick={() => setCurrentExample(example.value)}
-                        style={{ /* Add button styles here */ }}
                     >
                         {example.label}
                     </button>

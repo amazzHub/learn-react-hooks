@@ -44,13 +44,11 @@
 }
 
 .movie-list {
-    /* Styles for ul */
     list-style: none;
     padding: 0;
 }
 
 .movie-list .movie-item {
-    /* Styles for li */
     padding: 16px;
     background-color: #444;
     border-bottom: 1px solid #555;
