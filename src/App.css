@@ -1,36 +1,91 @@
 .App {
   text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  height: 100vh;
+}
+
+.nav-menu {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+  background-color: #555;
+}
+
+/* Active class for the nav link */
+.nav-item .active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling for the main content area */
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  background-color: #0056b3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.example-content {
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  .nav-item .nav-link {
+    padding: 0.5rem 2rem;
   }
 }

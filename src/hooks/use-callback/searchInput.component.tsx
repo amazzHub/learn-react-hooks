@@ -5,11 +5,12 @@ interface SearchProps {
 }
 
 const SearchInputComponent = ({ onChange }: SearchProps) => {
-    console.log('Search rendered!');
+    console.log('Rending search...');
 
     return <input
+        className='search-input'
         type='text'
-        placeholder='Search users...'
+        placeholder='Search movies...'
         onChange={(e) => onChange(e.target.value)}
     />;
 }
