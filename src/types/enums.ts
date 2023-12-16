@@ -1,0 +1,6 @@
+export enum RouteExamples {
+    FIRST_USE_EFFECT_EXAMPLE = 1,
+    SECOND_USE_EFFECT_EXAMPLE = 2,
+    FIRST_USE_REF_EXAMPLE = 3,
+    SECOND_USE_REF_EXAMPLE = 4,
+}

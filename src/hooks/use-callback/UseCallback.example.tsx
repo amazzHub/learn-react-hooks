@@ -32,16 +32,15 @@ export const UseCallbackExample: React.FC<Props> = () => {
 
     return (
         <div className='tutorial'>
-            <div className='align-center mb-2 flex'>
-                <button onClick={handleShuffleMovies}>
+            <div className='align-center mb-2 actions'>
+                <button className='shuffle-button' onClick={handleShuffleMovies}>
                     Shuffle
                 </button>
-
                 <SearchInput onChange={handleSearch} />
             </div>
-            <ul>
+            <ul className='movie-list'>
                 {
-                    movies.map((user) => <li key={user}>{user}</li>)
+                    movies.map((user) => <li className='movie-item' key={user}>{user}</li>)
                 }
             </ul>
         </div>
