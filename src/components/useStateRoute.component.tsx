@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { RouteExamples } from "../types";
-import { ExampleComponent } from "../types/models";
+import { ExampleComponent, RouteExamples } from "../types";
 
 type Props = {
     examples: ExampleComponent[]
